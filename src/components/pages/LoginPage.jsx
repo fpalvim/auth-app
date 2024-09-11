@@ -16,7 +16,7 @@ function LoginPage() {
             password: signupPassword
         }
 
-        fetch('https://nfz1b0p6-8787.euw.devtunnels.ms/signup', {
+        fetch('https://orange-chainsaw-jxj9gpgx664f5gp-5173.app.github.dev/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ function LoginPage() {
             password: password
         }
 
-        fetch('https://nfz1b0p6-8787.euw.devtunnels.ms/login', {
+        fetch('https://orange-chainsaw-jxj9gpgx664f5gp-5173.app.github.dev/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

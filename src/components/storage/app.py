@@ -47,12 +47,6 @@ def login():
     access_token = create_access_token(identity=user_db.user)
     return jsonify(access_token=access_token), 200
 
-@app.route('/protected', methods=['GET'])
-@jwt_required()
-def protected():
-    current_user = get_jwt_identity()
-    return jsonify(message=f'Hello, {current_user}, you are logged in and you was redirected to a protected resource.')
-
     
 
 app.run(host='0.0.0.0', port=8787)
